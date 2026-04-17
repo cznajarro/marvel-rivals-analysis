@@ -1,0 +1,51 @@
+hero,role,matches,win_rate,MVPs,SVPs,Damage/Min,Healing/Min,K/D,K/D/A
+Adam Warlock,Strategist,43.5,42.3,0,1,412,1230,0.78,1.88
+Angela,Vanguard,1.8,5.6,0,1,606,0,0.78,1.11
+Black Panther,Duelist,16.4,44.5,0,0,673,0,1.49,1.49
+Black Widow,Duelist,4.7,42.6,0,0,677,0,1.8,1.96
+Blade,Duelist,10.2,40.2,1,0,1149,182,1.79,2.23
+Bruce Banner,Vanguard,1.1,9.1,0,0,555,0,0.75,1
+Captain America,Vanguard,17.4,58.6,0,0,602,5,1.59,1.7
+Cloak & Dagger,Strategist,14.1,41.1,1,0,524,1387,1.7,3.47
+Daredevil,Duelist,1.9,0,0,0,486,12,0.67,0.67
+Deadpool (Duelist),Duelist,0,0,0,0,0,0,0,0
+Deadpool (Strategist),Strategist,0,0,0,0,0,0,0,0
+Deadpool (Vanguard),Vanguard,29.4,51,1,1,922,185,2.38,3.24
+Doctor Strange,Vanguard,814.4,51.1,83,100,1069,0,2.88,3.12
+Elsa Bloodstone,Duelist,0,0,0,0,0,0,0,0
+Emma Frost,Vanguard,69.2,36,3,4,987,0,2.19,2.54
+Gambit,Strategist,107.7,48.2,5,9,578,1891,2.16,5.6
+Groot,Vanguard,33.1,46.5,2,2,985,14,2.17,2.31
+Hawkeye,Duelist,1.7,70.6,0,0,1240,0,2.8,3.4
+Hela,Duelist,26.5,46.8,0,1,1166,0,2.51,2.69
+Human Torch,Duelist,3.2,31.2,0,0,859,0,1.44,1.44
+Invisible Woman,Strategist,43.6,48.6,0,0,475,1305,1.27,2.97
+Iron Fist,Duelist,3.3,15.2,0,0,508,37,0.74,0.74
+Iron Man,Duelist,6.6,71.2,0,0,731,0,2.29,2.29
+Jeff The Land Shark,Strategist,14.2,43.7,0,0,441,1116,1.19,3.2
+Loki,Strategist,69.1,50.9,4,2,515,1189,1.8,4.45
+Luna Snow,Strategist,0,0,0,0,0,0,0,0
+Magik,Duelist,12,58.3,0,0,729,0,1.73,1.74
+Magneto,Vanguard,99.6,48.9,2,6,995,0,2.02,2.44
+Mantis,Strategist,33.6,67.9,1,1,430,1157,1.2,3.46
+Mister Fantastic,Duelist,5.6,39.3,1,0,930,0,1.35,1.5
+Moon Knight,Duelist,10.9,30.3,1,0,1078,8,1.32,1.36
+Namor,Duelist,18.6,45.2,1,2,1183,0,2.74,2.93
+Peni Parker,Vanguard,18.5,41.1,1,0,1181,209,3.28,4.61
+Phoenix,Duelist,3.3,33.3,0,0,968,76,1.5,1.54
+Psylocke,Duelist,26.5,42.3,0,1,739,0,1.66,1.66
+Rocket Raccoon,Strategist,31.5,35.9,1,1,243,1514,1.14,4.25
+Rogue,Vanguard,1.9,31.6,0,0,779,150,2.23,3.08
+Scarlet Witch,Duelist,42.7,59.7,4,0,1203,0,3.23,3.49
+Spider-Man,Duelist,2,50,0,0,488,0,1.25,1.25
+Squirrel Girl,Duelist,8.4,35.7,0,1,1159,0,2.26,2.64
+Star-Lord,Duelist,3.9,35.9,0,0,586,0,1.34,1.34
+Storm,Duelist,183,61,19,12,1268,0,2.94,5.47
+The Punisher,Duelist,3.6,27.8,0,0,609,0,0.88,0.88
+The Thing,Vanguard,40.5,40.5,1,5,1148,0,2.04,2.8
+Thor,Vanguard,76.5,56.9,9,5,1057,0,2.73,3.21
+Ultron,Strategist,82.1,51.9,7,5,643,1516,2.54,7.08
+Venom,Vanguard,8.9,39.3,0,0,702,0,1.6,1.87
+White Fox,Strategist,1,100,0,0,1179,1403,7,15.33
+Winter Soldier,Duelist,5.9,69.5,0,0,871,0,1.72,2.4
+Wolverine,Duelist,17.4,66.1,0,0,854,68,1.23,1.32
