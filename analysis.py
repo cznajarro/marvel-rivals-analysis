@@ -17,7 +17,7 @@ plt.tight_layout()
 
 plt.show()
 
-
+#Now for a Scatter Plot of Win rate vs KDA
 vanguards = df[(df["matches"]>=10.0) & (df["role"] == "Vanguard")]
 vanguards_kda = vanguards["K/D/A"]
 vanguards_winrate = vanguards["win_rate"]
@@ -31,12 +31,26 @@ strategists_kda = strategists["K/D/A"]
 strategists_winrate = strategists["win_rate"]
 
 
-
 plt.title("Win Rate by K/D/A", size=20, fontweight="bold", loc="left")
 plt.xlabel("K/D/A", fontweight="bold")
 plt.ylabel("Win Rate", fontweight="bold")
 
-plt.scatter(vanguards_kda, vanguards_winrate, color="blue")
-plt.scatter(duelists_kda, duelists_winrate, color="red")
-plt.scatter(strategists_kda, strategists_winrate, color="green")
+plt.scatter(vanguards_kda, vanguards_winrate, color="blue", label="Vanguard")
+plt.scatter(duelists_kda, duelists_winrate, color="red", label="Duelist")
+plt.scatter(strategists_kda, strategists_winrate, color="green",label="Strategist")
+
+plt.legend()
+plt.show()
+
+#Here I'm gonna make a bar chart again but this time showing the heroes with the highest frequency of MVP/SVP
+df["mvp_svp_rate"] = (df["MVPs"] + df["SVPs"]) / df["matches"]
+#MVP Rate = # of MVP's + # of SVP's divided by # of matches
+
+top_mvp_svp = df[df["matches"] >= 10].sort_values("mvp_svp_rate", ascending=True).tail(10)
+#get top 10 highest MVP/SVP Rate
+
+plt.barh(top_mvp_svp["hero"], top_mvp_svp["mvp_svp_rate"], color="gold", edgecolor="black")
+plt.title("Top Heroes by MVP/SVP Frequency", fontweight="bold", color="Orange")
+plt.xlabel("MVP or SVP Frequency")
+plt.tight_layout()
 plt.show()
