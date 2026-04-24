@@ -1,14 +1,18 @@
 import pandas as pd
+import numpy as np
 import matplotlib.pyplot as plt
 
 df = pd.read_csv("data/marvel_rivals_stats.csv")
 
-#this is just me making sure that matplotlib works and I can make a chart
-top = df.sort_values(by="win_rate", ascending=False).head(15)
+top = df[(df["matches"] >= 10.0)].sort_values(by="win_rate", ascending=True).tail(20)
+#this is making a data frame that only includes heroes with more than 10 matches, and then sorting them by win rate
 
-plt.title("Top Heroes by Win Rate", fontsize=15, fontfamily="Courier", color= "blue")
-plt.barh(top["hero"], top["win_rate"], color="green")
-plt.xlabel("Win Rate", fontsize=15, fontfamily="Courier", color="red")
-plt.ylabel("Hero", fontsize = 15, fontfamily="Courier", color="green")
+plt.barh(top["hero"], top["win_rate"], color="green", edgecolor="black")
+
+plt.title("Top Heroes by Win Rate", fontsize=15, fontfamily="Arial", color= "blue", fontweight="bold")
+plt.xlabel("Win Rate", fontsize=17, fontfamily="Arial", color="red", fontweight="bold")
+plt.ylabel("Hero", fontsize = 17, fontfamily="Arial", color="green", fontweight="bold")
 plt.tight_layout()
+
+
 plt.show()
