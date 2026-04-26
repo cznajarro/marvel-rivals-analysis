@@ -54,3 +54,13 @@ plt.title("Top Heroes by MVP/SVP Frequency", fontweight="bold", color="Orange")
 plt.xlabel("MVP or SVP Frequency")
 plt.tight_layout()
 plt.show()
+
+#this part is for a pie chart to show the matches by role played. I am sure it will be overwhelmingly Vanguard though
+roles = ["Vanguard","Duelist", "Strategist"]
+matches = df.groupby("role")["matches"].sum()
+colors = ["#EB3838", "#4CEB38", "#2754F5"]
+roles_avg_winrate = df.groupby("role")["win_rate"].mean()
+
+plt.title("Percentage of Time Played by Role", fontweight="bold", fontsize=20)
+plt.pie(matches.values, labels = matches.index, autopct="%1.1f%%", colors = colors)
+plt.show()
