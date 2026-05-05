@@ -10,9 +10,6 @@ I pulled together my data from tracker.gg to see my stats for all the heroes I'v
 - pandas
 - matplotlib
 
-### K/D vs. Win Rate by Role
-![K/D vs Win Rate](figures/Win_Rate_by_KDA.png)
-
 ## Key Findings
 
 #### Top Heroes by Win Rate
@@ -23,7 +20,11 @@ I pulled together my data from tracker.gg to see my stats for all the heroes I'v
 ![MVP SVP Rate](figures/Top_Heroes_by_MVPSVP_Frequency.png)
 - Here is the rate of how often I get MVP/SVP ((MVP+SVP)/#_of_matches), so this is a decent metric for individual performance. Here, Doctor Strange shows a strong lead with almost a 23% MVP/SVP followed by another Vanguard, Thor. Storm again shows up in the top 3 with a very strong 16.9% MVP/SVP rate. I would say this indicates strong performance as Storm correlates with a high win rate but I believe that a strong individual performance with high kills as Strange brings a lot less value, especially if solo-tanking. The last on this chart, Blade only has 1 MVP but is there because he has 10.2 matches so I would hesitate to count that one. 
 
-  
+### K/D/A vs. Win Rate by Role
+![K/D vs Win Rate](figures/Win_Rate_by_KDA.png)
+- Now that we've measured group performance and individual performance we can see if a strong individual performance actually means a higher win rate. Most characters are collected slightly lower-left of center. The far strategist outlier on the right is Ultron because of the high amount of assists he can get being a a more damage-centered strategist and Mantis is the higher win rate strategist outlier with an average K/D/A. Other than Mantis, the strategists I play show a decent trend to the right and upwards. The duelists show a weaker, steeper trend with Storm as somewhat of an outlier with a very high win rate and K/D/A. Vanguards on the other hand, do not show a strong trend in any direction and are more closely concentrated in the center.
+
+## How to Run
 1. Clone the repo
 2. `pip install pandas matplotlib`
 3. Open `notebook.ipynb` in Jupyter or run `analysis.py`
