@@ -2,6 +2,11 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
+role_colors = {
+    "Vanguard" : "#2980b9",
+    "Duelist" : "#c0392b",
+    "Strategist" : "#27ae60"
+}
 df = pd.read_csv("data/marvel_rivals_stats.csv")
 
 top = df[(df["matches"] >= 10.0)].sort_values(by="win_rate", ascending=True).tail(20)
@@ -35,9 +40,9 @@ plt.title("Win Rate by K/D/A", size=20, fontweight="bold", loc="left")
 plt.xlabel("K/D/A", fontweight="bold")
 plt.ylabel("Win Rate", fontweight="bold")
 
-plt.scatter(vanguards_kda, vanguards_winrate, color="blue", label="Vanguard")
-plt.scatter(duelists_kda, duelists_winrate, color="red", label="Duelist")
-plt.scatter(strategists_kda, strategists_winrate, color="green",label="Strategist")
+plt.scatter(vanguards_kda, vanguards_winrate, color=role_colors["Vanguard"], label="Vanguard")
+plt.scatter(duelists_kda, duelists_winrate, color=role_colors["Duelist"], label="Duelist")
+plt.scatter(strategists_kda, strategists_winrate, color=role_colors["Strategist"],label="Strategist")
 
 plt.legend()
 plt.show()
@@ -49,7 +54,7 @@ df["mvp_svp_rate"] = (df["MVPs"] + df["SVPs"]) / df["matches"]
 top_mvp_svp = df[df["matches"] >= 10].sort_values("mvp_svp_rate", ascending=True).tail(10)
 #get top 10 highest MVP/SVP Rate
 
-plt.barh(top_mvp_svp["hero"], top_mvp_svp["mvp_svp_rate"], color="gold", edgecolor="black")
+plt.barh(top_mvp_svp["hero"], top_mvp_svp["mvp_svp_rate"], color="#fbdc2c", edgecolor="black")
 plt.title("Top Heroes by MVP/SVP Frequency", fontweight="bold", color="Orange")
 plt.xlabel("MVP or SVP Frequency")
 plt.tight_layout()
