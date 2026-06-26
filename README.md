@@ -28,6 +28,19 @@ I pulled together my data from tracker.gg to see my stats for all the heroes I'v
 ![K/D vs Win Rate](figures/Win_Rate_by_KDA.png)
 - Now that we've measured group performance and individual performance we can see if a strong individual performance actually means a higher win rate. Most characters are collected slightly lower-left of center. The far strategist outlier on the right is **Ultron** because of the high amount of assists he can get being a a more damage-centered strategist and **Mantis** is the higher win rate strategist outlier with an average K/D/A. Other than **Mantis**, the strategists I play show a decent trend to the right and upwards. The duelists show a weaker, steeper trend with **Storm** as somewhat of an outlier with a very high win rate and K/D/A. Vanguards on the other hand, do not show a strong trend in any direction and are more closely concentrated in the center.
 
+### Markov Chain
+- Analysing 1,021 competitive matches, I modeled win/loss streaks as a 
+Markov Chain to see whether my previous match outcome affects the next one.
+
+**Key Findings:**
+
+They did.
+- After a win: 50.3% chance of **winning again**, 49.7% chance of losing
+- After a loss: 48.2% chance of winning again, 51.8% chance of **losing again**
+
+This shows that I am very slightly more likely to continue losing after a loss than I am to continue winning after a win.
+
+
 ## How to Run
 1. Clone the repo
 2. `pip install pandas matplotlib`
