@@ -42,6 +42,17 @@ This shows that I am very slightly more likely to continue losing after a loss t
 
 
 ## How to Run
+
 1. Clone the repo
-2. `pip install pandas matplotlib`
-3. Open `notebook.ipynb` in Jupyter or run `analysis.py`
+   ```bash
+   git clone https://github.com/cznajarro/marvel-rivals-analysis.git
+   cd marvel-rivals-analysis
+   ```
+2. Install dependencies
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Open `notebook.ipynb` in Jupyter to explore the analysis, or run `analysis.py` directly:
+   ```bash
+   python analysis.py
+   ```
