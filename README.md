@@ -34,11 +34,11 @@ Markov Chain to see whether my previous match outcome affects the next one.
 
 **Key Findings:**
 
-They did.
 - After a win: 50.3% chance of **winning again**, 49.7% chance of losing
 - After a loss: 48.2% chance of winning again, 51.8% chance of **losing again**
-
-This shows that I am very slightly more likely to continue losing after a loss than I am to continue winning after a win.
+  
+The gap is 2.1 points, but a two-proportion test gives p ≈ 0.50 (95% CI: −4.0 to +8.3 points). I can't distinguish this from random variation, so
+**there's no evidence that I get "tilted" from losing or that one match has an effect on the next**
 
 
 ## How to Run
